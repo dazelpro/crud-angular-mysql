@@ -1,0 +1,20 @@
+<h2>Data Karyawan</h2>
+<table border="1" width="80%">
+    <tr>
+        <th>NIP</th>
+        <th>NAMA</th>
+        <th>ALAMAT</th>
+        <th>JABATAN</th>
+        <th>AKSI</th>
+    </tr>
+        <tr *ngFor="let data of dataKaryawan">
+        <td>{{data.nip}}</td>
+        <td>{{data.nama}}</td>
+        <td>{{data.alamat}}</td>
+        <td>{{data.jabatan}}</td>
+        <td>
+            <button routerLink="/edit-karyawan/{{data.nip}}">Edit</button>
+            <button (click)="delete(data.nip)">Hapus</button>
+        </td>
+    </tr>
+</table>

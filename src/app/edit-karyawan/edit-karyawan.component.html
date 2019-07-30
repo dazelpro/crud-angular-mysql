@@ -1,0 +1,29 @@
+<table *ngIf="edit">
+    <tr>
+        <td>NIP</td>
+        <td>:</td>
+        <td><input [(ngModel)]="edit.nip" type="text"></td>
+    </tr>
+    <tr>
+        <td>Nama Lengkap</td>
+        <td>:</td>
+        <td><input [(ngModel)]="edit.nama" type="text"></td>
+    </tr>
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><input [(ngModel)]="edit.alamat" type="text"></td>
+    </tr>
+    <tr>
+        <td>Jabatan</td>
+        <td>:</td>
+        <td><input [(ngModel)]="edit.jabatan" type="text"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <button (click)="editDataKaryawan()">Perbarui</button>
+        </td>
+    </tr>
+</table>
